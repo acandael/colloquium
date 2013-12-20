@@ -1,0 +1,37 @@
+section {
+	@include outer-container;
+	#hero {      
+      background-color: $light-purple;
+      @include linear-gradient($light-purple, darken($light-purple, 10));
+      height: 333px;
+      border-radius: 10px;
+      border: 1px solid $medium-gray;
+	    article {
+	    	@include span-columns(6);
+	      @include pad(30px 50px);
+	    	h1 {
+	    		font-size: em(24);    	
+	    	}	    	
+	    	.date {    	    		
+	    	  color: $base-body-color;
+	    	}
+	    	.body {
+	    		margin-top: 40px;
+	    		font-weight: bold;
+	    	}
+	    	.button {
+	    		@extend %button;
+	    		margin-top: 50px;
+	    		margin-left: 120px;
+	    	}
+	    }
+	    #poster {
+	    	@include pad(18px 50px);
+	    	@include span-columns(6);
+	    	img {      
+        box-shadow: 5px 5px 20px darken(#888888, 10);
+        border: 1px solid $medium-gray;        
+	    	}
+	    }
+	}
+}
