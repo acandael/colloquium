@@ -3,6 +3,7 @@ section {
 	#hero {      
       background-color: $light-purple;
       @include linear-gradient($light-purple, darken($light-purple, 10));
+      margin-top: 50px;
       height: 333px;
       border-radius: 10px;
       border: 1px solid $medium-gray;
@@ -14,14 +15,16 @@ section {
 	    	}	    	
 	    	.date {    	    		
 	    	  color: $base-body-color;
+	    	  margin-left: 100px;
 	    	}
 	    	.body {
 	    		margin-top: 40px;
 	    		font-weight: bold;
+	    		line-height: 2em;
 	    	}
 	    	.button {
 	    		@extend %button;
-	    		margin-top: 50px;
+	    		margin-top: 25px;
 	    		margin-left: 120px;
 	    	}
 	    }
@@ -30,7 +33,7 @@ section {
 	    	@include span-columns(6);
 	    	img {      
         box-shadow: 5px 5px 20px darken(#888888, 10);
-        border: 1px solid $medium-gray;        
+        border: 2px solid $medium-gray;        
 	    	}
 	    }
 	}
