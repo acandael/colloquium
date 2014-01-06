@@ -1,0 +1,22 @@
+div.footer-spacer {
+  background: $white;
+  height: 50px;
+}
+
+footer {
+
+	height: em(70);
+	background: $dark-purple;
+	padding: 15px 20px;
+
+	div.copyright {
+		@include span-columns(6);
+		@include pad(0 1em);
+	}
+
+	div.disclaimer {
+		@include span-columns(6);
+		text-align: right;
+		@include pad(0 1em);
+	}
+}

@@ -1,6 +1,7 @@
 @import "normalize";
 @import "bourbon/bourbon";
 @import "bitters/bitters";
+@import "grid-settings";
 @import "neat/neat";
 
 @import "base/colors";
@@ -8,3 +9,4 @@
 
 @import "application/nav";
 @import "application/index";
+@import "application/footer";

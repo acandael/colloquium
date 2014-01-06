@@ -1,6 +1,54 @@
 header.nav {
-    background: #1c1c1c;
+    
+    background: $dark-purple;
+    @include linear-gradient(lighten($dark-purple, 10), $dark-purple);
     padding: 15px 20px;
+    height: em(50);
+
+    div.logo {
+        @include span-columns(3);
+    }
+
+    h1 {
+        font-size: 1em;
+
+        a {
+            color: rgba(250, 250, 250, 0.8);
+        }
+    }
+
+    nav {
+        @include span-columns(6);
+        
+        
+        li {
+            @include inline-block;
+            @include pad(0px 1em);            
+
+
+            a {
+                color: rgba(250, 250, 250, 0.8);
+
+                &:hover {
+                    color: rgba(250, 250, 250, 1);
+                }
+            }            
+        }
+    }
+
+    div.language {
+        @include span-columns(3);
+        text-align: right;
+
+        a {
+            color: rgba(250, 250, 250, 0.8);
+
+            &:hover {
+                    color: rgba(250, 250, 250, 1);
+                }
+        }       
+    }   
+
 }
  /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
         header:before,
@@ -16,110 +64,5 @@ header.nav {
             zoom:1;
         }
 
-h1.logo a {
-    color: #d8d8d8;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 20px;
-    line-height: 22px;
-    float: left;
-    letter-spacing: 0.2em;
-}
-a.to_nav {
-    float: right;
-    color: #fff;
-    background: #4e4e4e;
-    text-decoration: none;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 22px;
-    height: 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
 
-a.to_nav {
-    float: right;
-    color: #fff;
-    background: #4e4e4e;
-    text-decoration: none;
-    padding: 0 10px;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 22px;
-    height: 22px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-}
-a.to_nav:hover,
-a.to_nav:focus {
-    color: #1c1c1c;
-    background: #ccc;
-}
-
-/*navigation*/
-#primary_nav ul {
-    list-style: none;
-    background: #1c1c1c;
-    padding: 5px 0;
-}
-#primary_nav li a {
-    display: block;
-    padding: 0 20px;
-    color: #ccc;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    letter-spacing: 0.1em;
-    line-height: 2em;
-    height: 2em;
-    border-bottom: 1px solid #383838;
-}
-#primary_nav li:last-child a {
-    border-bottom: none;
-}
-#primary_nav li a:hover,
-#primary_nav li a:focus {
-    color: #1c1c1c;
-    background: #ccc;
-}
-
-/*media queries*/
-        @media only screen and (min-width: 768px) {
-            a.to_nav {
-              display: none;}
-
-            .wrapper {
-                position: relative;
-                width: 768px;
-                margin: auto;
-            }
-            #primary_nav {
-                position: absolute;
-                top: 5px;
-                right: 10px;
-                background: none;
-            }
-            #primary_nav li {
-                display: inline;
-            }
-            #primary_nav li a {
-                float: left;
-                border: none;
-                padding: 0 10px;
-                -webkit-border-radius: 2px;
-                -moz-border-radius: 2px;
-                border-radius: 2px;
-            }
-            #primary_nav li.top {
-                display: none;}
-            }
+ 

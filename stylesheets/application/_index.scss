@@ -6,7 +6,7 @@ section {
       margin-top: 50px;
       height: 333px;
       border-radius: 10px;
-      border: 1px solid $medium-gray;
+      border: 2px solid darken($light-purple, 5);
 	    article {
 	    	@include span-columns(6);
 	      @include pad(30px 50px);
@@ -36,5 +36,30 @@ section {
         border: 2px solid $medium-gray;        
 	    	}
 	    }
-	}
+	}   
+
 }
+
+section.content {
+    	@include outer-container;
+        @include pad(0 1em);
+    	margin-top: em(30);
+    	
+		article {
+			@include span-columns(6);
+			height: em(300);
+
+			h2 {
+				font-size: 1.5em;
+				line-height: 1.5em;
+				@include pad(1em);
+				text-align: center;
+			}
+
+			p.more-info {
+				text-align: right;
+				margin-top: em(20);
+			}
+		}
+	}
+
