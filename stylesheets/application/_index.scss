@@ -16,10 +16,23 @@ section {
       	margin-right: auto;
       	width: 95%
       }
+
+      @include media($mobile) {
+      	height: em(250);
+      }
+
+     
 	    article {
 	    	@include span-columns(6);    	
 	      	margin-top: 1.5em;
 	      	padding-left: 2em;
+
+	      	 @include media($mobile) {
+      			position: static;
+      			@include fill-parent;
+      			margin-left: 1em;
+      			padding-left: 0px;
+      		}
 	      	
 	    	h1 {
 	    		font-size: 1.5em;
@@ -27,11 +40,20 @@ section {
     	        	font-size: 1.2em;
 
     	        }
+
+    	        @include media($mobile) {
+    	        	font-size: 1em;    	        	
+    	        }
 	    	}
 
 	    	.date {    	    		
 	    	  color: $base-body-color;
 	    	  margin-left: 100px;
+	    	  
+	    	  @include media($mobile) {
+	    	  	margin-left: 0px;
+	    	  	font-size: .8em;
+	    	  }
 	    	}
 	    	.body {
 	    		margin-top: 1.5em;
@@ -47,13 +69,23 @@ section {
     				font-size: .9em;
 	    			
 	    		}
+
+	    		@include media($mobile) {
+	    			font-size: .8em;
+	    			margin-right: 1em;
+	    		}
 	    	}
 
 	    	div.registreer {
 	    		text-align: center;
 		    	.button {
-		    		@extend %button;
+		    		@include button(shiny, $dark-purple);
 		    		margin: 0 auto;
+
+		    		@include media($mobile) {
+		    			width: 40%;
+		    			font-size: .8em;
+		    		}
 		    	    		    		
 		    	}
 	    	}
@@ -64,7 +96,11 @@ section {
 	    	img {      
         box-shadow: 5px 5px 20px darken(#888888, 10);
         border: 2px solid $medium-gray;
-        height: auto;        
+        height: auto;
+
+               @include media($mobile) {
+               	  display: none;
+               }       
 	    	}
 
 	    	@include media($tablet) {

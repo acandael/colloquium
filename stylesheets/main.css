@@ -339,7 +339,7 @@ table {
   border-spacing: 0; }
 
 button,
-input[type="submit"], section #hero article div.registreer .button {
+input[type="submit"] {
   border: 1px solid #2459a6;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 0 #89a8d5;
@@ -357,7 +357,7 @@ input[type="submit"], section #hero article div.registreer .button {
   background-clip: padding-box;
   font-size: 1em; }
   button:hover:not(:disabled),
-  input[type="submit"]:hover:not(:disabled), section #hero article div.registreer .button:hover:not(:disabled) {
+  input[type="submit"]:hover:not(:disabled) {
     box-shadow: inset 0 1px 0 0 #628cc8;
     cursor: pointer;
     background-color: #3c71bb;
@@ -365,11 +365,11 @@ input[type="submit"], section #hero article div.registreer .button {
     background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
     background-image: linear-gradient(#3c71bb, #255aa5); }
   button:active:not(:disabled),
-  input[type="submit"]:active:not(:disabled), section #hero article div.registreer .button:active:not(:disabled) {
+  input[type="submit"]:active:not(:disabled) {
     border: 1px solid #2459a6;
     box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397, 0 1px 1px 0 #eeeeee; }
   button:disabled,
-  input[type="submit"]:disabled, section #hero article div.registreer .button:disabled {
+  input[type="submit"]:disabled {
     opacity: 0.5;
     cursor: not-allowed; }
 
@@ -2105,6 +2105,9 @@ section {
         margin-left: auto;
         margin-right: auto;
         width: 95%; } }
+    @media screen and (max-width: 480px) {
+      section #hero {
+        height: 15.625em; } }
     section #hero article {
       float: left;
       display: block;
@@ -2114,14 +2117,27 @@ section {
       padding-left: 2em; }
       section #hero article:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 480px) {
+        section #hero article {
+          position: static;
+          width: 100%;
+          margin-left: 1em;
+          padding-left: 0px; } }
       section #hero article h1 {
         font-size: 1.5em; }
         @media screen and (max-width: 768px) {
           section #hero article h1 {
             font-size: 1.2em; } }
+        @media screen and (max-width: 480px) {
+          section #hero article h1 {
+            font-size: 1em; } }
       section #hero article .date {
         color: white;
         margin-left: 100px; }
+        @media screen and (max-width: 480px) {
+          section #hero article .date {
+            margin-left: 0px;
+            font-size: .8em; } }
       section #hero article .body {
         margin-top: 1.5em;
         margin-bottom: 2em;
@@ -2133,10 +2149,45 @@ section {
             margin-bottom: 1.5 em;
             line-height: 1.5em;
             font-size: .9em; } }
+        @media screen and (max-width: 480px) {
+          section #hero article .body {
+            font-size: .8em;
+            margin-right: 1em; } }
       section #hero article div.registreer {
         text-align: center; }
         section #hero article div.registreer .button {
+          border: 1px solid #000015;
+          border-bottom: 1px solid black;
+          border-radius: 5px;
+          box-shadow: inset 0 1px 0 0 #585072;
+          color: white;
+          display: inline-block;
+          font-size: 14px;
+          font-weight: bold;
+          background-color: #333366;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333366), color-stop(50%, #000145), color-stop(50%, #000036), color-stop(100%, #000038));
+          background-image: -webkit-linear-gradient(top, #333366 0%, #000145 50%, #000036 50%, #000038 100%);
+          background-image: linear-gradient(to bottom,#333366 0%, #000145 50%, #000036 50%, #000038 100%);
+          padding: 8px 20px;
+          text-align: center;
+          text-decoration: none;
+          text-shadow: 0 -1px 1px black;
           margin: 0 auto; }
+          section #hero article div.registreer .button:hover:not(:disabled) {
+            cursor: pointer;
+            background-color: #262454;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #262454), color-stop(50%, #000033), color-stop(50%, #000024), color-stop(100%, #000027));
+            background-image: -webkit-linear-gradient(top, #262454 0%, #000033 50%, #000024 50%, #000027 100%);
+            background-image: linear-gradient(to bottom,#262454 0%, #000033 50%, #000024 50%, #000027 100%); }
+          section #hero article div.registreer .button:active:not(:disabled) {
+            box-shadow: inset 0 0 20px 0 black, 0 1px 0 white; }
+          section #hero article div.registreer .button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed; }
+          @media screen and (max-width: 480px) {
+            section #hero article div.registreer .button {
+              width: 40%;
+              font-size: .8em; } }
     section #hero #poster {
       padding: 1.125em 3.125em;
       float: left;
@@ -2149,6 +2200,9 @@ section {
         box-shadow: 5px 5px 20px #6f6f6f;
         border: 2px solid #999999;
         height: auto; }
+        @media screen and (max-width: 480px) {
+          section #hero #poster img {
+            display: none; } }
       @media screen and (max-width: 768px) {
         section #hero #poster {
           padding: 27px 25px; } }
