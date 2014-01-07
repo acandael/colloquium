@@ -2218,6 +2218,9 @@ section.content {
     display: table; }
   section.content:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    section.content {
+      margin-top: 0.9375em; } }
   section.content article {
     float: left;
     display: block;
@@ -2231,6 +2234,12 @@ section.content {
       section.content article {
         height: 15.625em;
         margin: 0 auto; } }
+    @media screen and (max-width: 480px) {
+      section.content article {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-bottom: 1em; } }
     section.content article h2 {
       font-size: 1.5em;
       line-height: 1.5em;
@@ -2239,6 +2248,9 @@ section.content {
       @media screen and (max-width: 768px) {
         section.content article h2 {
           font-size: 1em; } }
+      @media screen and (max-width: 480px) {
+        section.content article h2 {
+          padding: 0.2em; } }
     section.content article p.more-info {
       text-align: right;
       margin-top: 1.25em; }

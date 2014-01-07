@@ -1,5 +1,6 @@
 section {
 	@include outer-container;
+
 	#hero {      
       background-color: $light-purple;
       @include linear-gradient($light-purple, darken($light-purple, 10));
@@ -18,7 +19,7 @@ section {
       }
 
       @include media($mobile) {
-      	height: em(250);
+      	height: em(250);      	
       }
 
      
@@ -115,6 +116,10 @@ section.content {
     	@include outer-container;
         
     	margin-top: em(30);
+
+    	@include media($mobile) {
+    		margin-top: em(15);
+    	}
     	
 		article {
 			@include span-columns(6);
@@ -123,7 +128,14 @@ section.content {
 
 			@include media($tablet) {
 				height: em(250);
-				margin: 0 auto;
+				margin: 0 auto;				
+			}
+
+			@include media($mobile) {
+				position: static;
+				@include fill-parent;
+				height: auto;
+				margin-bottom: 1em;
 			}
 
 			h2 {
@@ -134,6 +146,9 @@ section.content {
 
 				@include media($tablet) {
 					font-size: 1em;
+				}
+				@include media($mobile) {
+					@include pad(.2em);
 				}
 			}
 
