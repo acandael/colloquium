@@ -10,6 +10,11 @@ footer {
 	@include linear-gradient(lighten($dark-purple, 10), $dark-purple);
 	padding: 15px 20px;
 
+	@include media($mobile) {
+		height: em(50);
+		padding: 10px 15px;
+	}
+
 	div.copyright {
 		@include span-columns(6);
 		@include pad(0 1em);
@@ -22,8 +27,19 @@ footer {
 	}
 
 	a {
+        
+        color: rgba(250, 250, 250, .8);
+
+        &:hover {
+        	color: rgba(250, 250, 250, 1);
+        }
+
 		@include media($tablet) {
 			font-size: .9em;
+		}
+
+		@include media($mobile) {
+			font-size: .7em;
 		}
 	}
 }
