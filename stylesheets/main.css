@@ -635,6 +635,9 @@ header.nav {
     font-size: 1em; }
     header.nav h1 a {
       color: rgba(250, 250, 250, 0.8); }
+    @media screen and (max-width: 768px) {
+      header.nav h1 {
+        font-size: .7em; } }
   header.nav nav {
     float: left;
     display: block;
@@ -654,6 +657,12 @@ header.nav {
         font-size: .9em; }
         header.nav nav li a:hover {
           color: #fafafa; }
+        @media screen and (max-width: 768px) {
+          header.nav nav li a {
+            font-size: .7em; } }
+      @media screen and (max-width: 768px) {
+        header.nav nav li {
+          padding: 0 0.3em; } }
   header.nav div.language {
     float: left;
     display: block;
@@ -667,6 +676,9 @@ header.nav {
       font-size: .9em; }
       header.nav div.language a:hover {
         color: #fafafa; }
+      @media screen and (max-width: 768px) {
+        header.nav div.language a {
+          font-size: .7em; } }
 
 /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
 header:before,
