@@ -339,7 +339,7 @@ table {
   border-spacing: 0; }
 
 button,
-input[type="submit"], section #hero article .button {
+input[type="submit"], section #hero article div.registreer .button {
   border: 1px solid #2459a6;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 0 #89a8d5;
@@ -357,7 +357,7 @@ input[type="submit"], section #hero article .button {
   background-clip: padding-box;
   font-size: 1em; }
   button:hover:not(:disabled),
-  input[type="submit"]:hover:not(:disabled), section #hero article .button:hover:not(:disabled) {
+  input[type="submit"]:hover:not(:disabled), section #hero article div.registreer .button:hover:not(:disabled) {
     box-shadow: inset 0 1px 0 0 #628cc8;
     cursor: pointer;
     background-color: #3c71bb;
@@ -365,11 +365,11 @@ input[type="submit"], section #hero article .button {
     background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
     background-image: linear-gradient(#3c71bb, #255aa5); }
   button:active:not(:disabled),
-  input[type="submit"]:active:not(:disabled), section #hero article .button:active:not(:disabled) {
+  input[type="submit"]:active:not(:disabled), section #hero article div.registreer .button:active:not(:disabled) {
     border: 1px solid #2459a6;
     box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397, 0 1px 1px 0 #eeeeee; }
   button:disabled,
-  input[type="submit"]:disabled, section #hero article .button:disabled {
+  input[type="submit"]:disabled, section #hero article div.registreer .button:disabled {
     opacity: 0.5;
     cursor: not-allowed; }
 
@@ -622,7 +622,7 @@ header.nav {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(100%, #333366));
   background-image: -webkit-linear-gradient(#444488, #333366);
   background-image: linear-gradient(#444488, #333366);
-  padding: 15px 20px;
+  padding: 0.625em 1.25em;
   height: 3.125em; }
   header.nav div.logo {
     float: left;
@@ -650,7 +650,8 @@ header.nav {
       *vertical-align: auto;
       padding: 0px 1em; }
       header.nav nav li a {
-        color: rgba(250, 250, 250, 0.8); }
+        color: rgba(250, 250, 250, 0.8);
+        font-size: .9em; }
         header.nav nav li a:hover {
           color: #fafafa; }
   header.nav div.language {
@@ -662,7 +663,8 @@ header.nav {
     header.nav div.language:last-child {
       margin-right: 0; }
     header.nav div.language a {
-      color: rgba(250, 250, 250, 0.8); }
+      color: rgba(250, 250, 250, 0.8);
+      font-size: .9em; }
       header.nav div.language a:hover {
         color: #fafafa; }
 
@@ -695,32 +697,48 @@ section {
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccccff), color-stop(100%, #9999ff));
     background-image: -webkit-linear-gradient(#ccccff, #9999ff);
     background-image: linear-gradient(#ccccff, #9999ff);
-    margin-top: 50px;
-    height: 333px;
-    border-radius: 10px;
+    margin-top: 3.125em;
+    width: 100%;
+    height: 20.8125em;
+    border-radius: 0.625em;
     border: 2px solid #b3b3ff; }
+    @media screen and (max-width: 768px) {
+      section #hero {
+        height: 18.75em; } }
     section #hero article {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 48.82117%;
-      padding: 30px 50px; }
+      margin-top: 1.5em;
+      padding-left: 2em; }
       section #hero article:last-child {
         margin-right: 0; }
       section #hero article h1 {
         font-size: 1.5em; }
+        @media screen and (max-width: 768px) {
+          section #hero article h1 {
+            font-size: 1.2em; } }
       section #hero article .date {
         color: white;
         margin-left: 100px; }
       section #hero article .body {
-        margin-top: 40px;
+        margin-top: 1.5em;
+        margin-bottom: 2em;
         font-weight: bold;
         line-height: 2em; }
-      section #hero article .button {
-        margin-top: 25px;
-        margin-left: 120px; }
+        @media screen and (max-width: 768px) {
+          section #hero article .body {
+            margin-top: 1em;
+            margin-bottom: 1.5 em;
+            line-height: 1.5em;
+            font-size: .9em; } }
+      section #hero article div.registreer {
+        text-align: center; }
+        section #hero article div.registreer .button {
+          margin: 0 auto; }
     section #hero #poster {
-      padding: 18px 50px;
+      padding: 1.125em 3.125em;
       float: left;
       display: block;
       margin-right: 2.35765%;
@@ -729,14 +747,17 @@ section {
         margin-right: 0; }
       section #hero #poster img {
         box-shadow: 5px 5px 20px #6f6f6f;
-        border: 2px solid #999999; }
+        border: 2px solid #999999;
+        height: auto; }
+      @media screen and (max-width: 768px) {
+        section #hero #poster {
+          padding: 27px 25px; } }
 
 section.content {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1em;
   margin-top: 1.875em; }
   section.content:before, section.content:after {
     content: " ";
@@ -748,7 +769,8 @@ section.content {
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    height: 18.75em; }
+    height: 18.75em;
+    padding: 0 1.5em; }
     section.content article:last-child {
       margin-right: 0; }
     section.content article h2 {
@@ -767,6 +789,10 @@ div.footer-spacer {
 footer {
   height: 4.375em;
   background: #333366;
+  background-color: #444488;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(100%, #333366));
+  background-image: -webkit-linear-gradient(#444488, #333366);
+  background-image: linear-gradient(#444488, #333366);
   padding: 15px 20px; }
   footer div.copyright {
     float: left;

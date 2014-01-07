@@ -1,8 +1,9 @@
 header.nav {
     
+    
     background: $dark-purple;
     @include linear-gradient(lighten($dark-purple, 10), $dark-purple);
-    padding: 15px 20px;
+    padding: em(10) em(20);
     height: em(50);
 
     div.logo {
@@ -28,6 +29,7 @@ header.nav {
 
             a {
                 color: rgba(250, 250, 250, 0.8);
+                font-size: .9em;
 
                 &:hover {
                     color: rgba(250, 250, 250, 1);
@@ -42,6 +44,7 @@ header.nav {
 
         a {
             color: rgba(250, 250, 250, 0.8);
+            font-size: .9em;
 
             &:hover {
                     color: rgba(250, 250, 250, 1);

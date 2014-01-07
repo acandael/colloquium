@@ -4,9 +4,10 @@ div.footer-spacer {
 }
 
 footer {
-
+    
 	height: em(70);
 	background: $dark-purple;
+	@include linear-gradient(lighten($dark-purple, 10), $dark-purple);
 	padding: 15px 20px;
 
 	div.copyright {
