@@ -8,6 +8,11 @@ header.nav {
 
     div.logo {
         @include span-columns(3);
+
+        @include media($mobile) {            
+            @include fill-parent;
+            margin-top: .5em;
+        }
     }
 
     h1 {
@@ -22,18 +27,53 @@ header.nav {
         }
     }
 
+    @include media($mobile) {
+        position: static;
+        padding: 0em 1.5em 1em 1.5em;
+        margin-top: 0px;
+        @include fill-parent;
+        height: auto;
+        background: $dark-purple;   
+    }
+
+    i#nav-dropdown {
+        display: none;
+        float: right;
+        padding: 5px 0 0 20px;
+        color: $white;
+
+        @include media($mobile) {
+          display: block;
+        }
+    }   
+
     nav {
         @include span-columns(6);
+
+        @include media($mobile) {
+            @include fill-parent;
+            padding-top: 0;
+        }
+
+        ul {
+            @include media($mobile) {
+                display: none;
+                background: $dark-purple;
+                opacity: .9;                
+                margin-top: 1em;
+                margin-bottom: 1em;
+                border-radius: 6px;
+            }  
+        }
         
         
         li {
             @include inline-block;
-            @include pad(0px 1em);            
-
+            @include pad(0px 1em);
 
             a {
                 color: rgba(250, 250, 250, 0.8);
-                font-size: .9em;
+                font-size: .9em;                
 
                 &:hover {
                     color: rgba(250, 250, 250, 1);
@@ -46,7 +86,33 @@ header.nav {
 
             @include media($tablet) {
                 @include pad(0 .3em);
-            }           
+            }
+
+            @include media($mobile) {            
+              @include fill-parent;
+              background: $light-purple;              
+              padding-left: 0;
+              border-bottom: 1px solid lighten(#ccc, 5);
+              line-height: em(35);
+              text-align: center;
+
+              &:hover {
+                opacity: .9;
+              }
+
+              &.active {
+                border-bottom: none;
+                color: $white;
+                opacity: .9;
+                
+              }
+
+              a {
+                  border-bottom: none;
+                  color: $dark-purple;                  
+                }
+            }
+                     
         }
     }
 
@@ -65,8 +131,14 @@ header.nav {
             @include media($tablet) {
                 font-size: .7em;
             }
-        }       
-    }   
+
+        }
+
+        @include media($mobile) {
+            @include fill-parent;
+            text-align: left;
+        }      
+    }    
 
 }
  /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
