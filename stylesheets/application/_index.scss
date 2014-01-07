@@ -4,13 +4,17 @@ section {
       background-color: $light-purple;
       @include linear-gradient($light-purple, darken($light-purple, 10));
       margin-top: em(50);
-      width: 100%;
+      
       height: em(333);
       border-radius: em(10);
       border: 2px solid darken($light-purple, 5);
 
       @include media($tablet) {
       	height: em(300);
+      	margin-top: 2em;
+      	margin-left: auto;
+      	margin-right: auto;
+      	width: 95%
       }
 	    article {
 	    	@include span-columns(6);    	
@@ -21,8 +25,10 @@ section {
 	    		font-size: 1.5em;
     	        @include media($tablet) {
     	        	font-size: 1.2em;
+
     	        }
-	    	}	    	
+	    	}
+
 	    	.date {    	    		
 	    	  color: $base-body-color;
 	    	  margin-left: 100px;
@@ -79,11 +85,20 @@ section.content {
 			height: em(300);
 			@include pad(0 1.5em);
 
+			@include media($tablet) {
+				height: em(250);
+				margin: 0 auto;
+			}
+
 			h2 {
 				font-size: 1.5em;
 				line-height: 1.5em;
 				@include pad(1em);
 				text-align: center;
+
+				@include media($tablet) {
+					font-size: 1em;
+				}
 			}
 
 			p.more-info {

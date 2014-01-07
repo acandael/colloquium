@@ -615,6 +615,9 @@ h2 {
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333366; }
+  @media screen and (max-width: 768px) {
+    p {
+      font-size: .9em; } }
 
 header.nav {
   background: #333366;
@@ -710,13 +713,16 @@ section {
     background-image: -webkit-linear-gradient(#ccccff, #9999ff);
     background-image: linear-gradient(#ccccff, #9999ff);
     margin-top: 3.125em;
-    width: 100%;
     height: 20.8125em;
     border-radius: 0.625em;
     border: 2px solid #b3b3ff; }
     @media screen and (max-width: 768px) {
       section #hero {
-        height: 18.75em; } }
+        height: 18.75em;
+        margin-top: 2em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%; } }
     section #hero article {
       float: left;
       display: block;
@@ -785,11 +791,18 @@ section.content {
     padding: 0 1.5em; }
     section.content article:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.content article {
+        height: 15.625em;
+        margin: 0 auto; } }
     section.content article h2 {
       font-size: 1.5em;
       line-height: 1.5em;
       padding: 1em;
       text-align: center; }
+      @media screen and (max-width: 768px) {
+        section.content article h2 {
+          font-size: 1em; } }
     section.content article p.more-info {
       text-align: right;
       margin-top: 1.25em; }
@@ -823,3 +836,6 @@ footer {
     padding: 0 1em; }
     footer div.disclaimer:last-child {
       margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    footer a {
+      font-size: .9em; } }

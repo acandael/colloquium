@@ -11,4 +11,8 @@ h2 {
 p {
 	font-family: $helvetica;
 	color: $dark-purple;
+
+	@include media($tablet) {
+		font-size: .9em;
+	}
 }
