@@ -606,11 +606,15 @@ dl {
 
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333366; }
+  color: #333366;
+  font-size: 1.5em;
+  margin-bottom: .5em; }
 
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333366; }
+  color: #333366;
+  font-size: 1.2em;
+  margin-bottom: .5em; }
 
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2156,31 +2160,31 @@ section {
       section #hero article div.registreer {
         text-align: center; }
         section #hero article div.registreer .button {
-          border: 1px solid #000015;
-          border-bottom: 1px solid black;
+          border: 1px solid #000037;
+          border-bottom: 1px solid #00000e;
           border-radius: 5px;
-          box-shadow: inset 0 1px 0 0 #585072;
+          box-shadow: inset 0 1px 0 0 #696194;
           color: white;
           display: inline-block;
           font-size: 14px;
           font-weight: bold;
-          background-color: #333366;
-          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333366), color-stop(50%, #000145), color-stop(50%, #000036), color-stop(100%, #000038));
-          background-image: -webkit-linear-gradient(top, #333366 0%, #000145 50%, #000036 50%, #000038 100%);
-          background-image: linear-gradient(to bottom,#333366 0%, #000145 50%, #000036 50%, #000038 100%);
+          background-color: #444488;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(50%, #0c1267), color-stop(50%, #000058), color-stop(100%, #00005a));
+          background-image: -webkit-linear-gradient(top, #444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
+          background-image: linear-gradient(to bottom,#444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
           padding: 8px 20px;
           text-align: center;
           text-decoration: none;
-          text-shadow: 0 -1px 1px black;
+          text-shadow: 0 -1px 1px #000016;
           margin: 0 auto; }
           section #hero article div.registreer .button:hover:not(:disabled) {
             cursor: pointer;
-            background-color: #262454;
-            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #262454), color-stop(50%, #000033), color-stop(50%, #000024), color-stop(100%, #000027));
-            background-image: -webkit-linear-gradient(top, #262454 0%, #000033 50%, #000024 50%, #000027 100%);
-            background-image: linear-gradient(to bottom,#262454 0%, #000033 50%, #000024 50%, #000027 100%); }
+            background-color: #373576;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #373576), color-stop(50%, #020655), color-stop(50%, #000046), color-stop(100%, #000049));
+            background-image: -webkit-linear-gradient(top, #373576 0%, #020655 50%, #000046 50%, #000049 100%);
+            background-image: linear-gradient(to bottom,#373576 0%, #020655 50%, #000046 50%, #000049 100%); }
           section #hero article div.registreer .button:active:not(:disabled) {
-            box-shadow: inset 0 0 20px 0 black, 0 1px 0 white; }
+            box-shadow: inset 0 0 20px 0 #00000e, 0 1px 0 white; }
           section #hero article div.registreer .button:disabled {
             opacity: 0.5;
             cursor: not-allowed; }
@@ -2254,6 +2258,79 @@ section.content {
     section.content article p.more-info {
       text-align: right;
       margin-top: 1.25em; }
+
+section.colloquium.content {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125em; }
+  section.colloquium.content:before, section.colloquium.content:after {
+    content: " ";
+    display: table; }
+  section.colloquium.content:after {
+    clear: both; }
+  section.colloquium.content article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    section.colloquium.content article:last-child {
+      margin-right: 0; }
+  section.colloquium.content aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 8.5298%;
+    border-radius: 6px;
+    padding: 1em;
+    background-color: #ccccff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccccff), color-stop(100%, #9999ff));
+    background-image: -webkit-linear-gradient(#ccccff, #9999ff);
+    background-image: linear-gradient(#ccccff, #9999ff);
+    border: 2px solid #b3b3ff; }
+    section.colloquium.content aside:last-child {
+      margin-right: 0; }
+    section.colloquium.content aside h2 {
+      text-align: center; }
+    section.colloquium.content aside p {
+      font-size: .9em; }
+    section.colloquium.content aside div.registreer {
+      text-align: center; }
+      section.colloquium.content aside div.registreer .button {
+        border: 1px solid #000037;
+        border-bottom: 1px solid #00000e;
+        border-radius: 5px;
+        box-shadow: inset 0 1px 0 0 #696194;
+        color: white;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: #444488;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(50%, #0c1267), color-stop(50%, #000058), color-stop(100%, #00005a));
+        background-image: -webkit-linear-gradient(top, #444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
+        background-image: linear-gradient(to bottom,#444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
+        padding: 8px 20px;
+        text-align: center;
+        text-decoration: none;
+        text-shadow: 0 -1px 1px #000016;
+        margin: 0 auto; }
+        section.colloquium.content aside div.registreer .button:hover:not(:disabled) {
+          cursor: pointer;
+          background-color: #373576;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #373576), color-stop(50%, #020655), color-stop(50%, #000046), color-stop(100%, #000049));
+          background-image: -webkit-linear-gradient(top, #373576 0%, #020655 50%, #000046 50%, #000049 100%);
+          background-image: linear-gradient(to bottom,#373576 0%, #020655 50%, #000046 50%, #000049 100%); }
+        section.colloquium.content aside div.registreer .button:active:not(:disabled) {
+          box-shadow: inset 0 0 20px 0 #00000e, 0 1px 0 white; }
+        section.colloquium.content aside div.registreer .button:disabled {
+          opacity: 0.5;
+          cursor: not-allowed; }
+        @media screen and (max-width: 480px) {
+          section.colloquium.content aside div.registreer .button {
+            width: 40%;
+            font-size: .8em; } }
 
 div.footer-spacer {
   background: white;

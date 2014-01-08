@@ -1,0 +1,44 @@
+section.colloquium.content {
+	@include outer-container;
+	margin-top: em(50);
+
+	article {
+		@include span-columns(7);
+	}
+
+	aside {
+		@include span-columns(4);
+		@include shift(1);
+
+		border-radius: 6px;
+
+		@include pad(1em);
+
+		@include linear-gradient($light-purple, darken($light-purple, 10));
+
+		border: 2px solid darken($light-purple, 5);
+
+		h2 {
+			text-align: center;
+		}
+
+		p {
+			font-size: .9em;
+		}
+
+		div.registreer {
+	    		text-align: center;
+		    	.button {
+		    		@include button(shiny, lighten($dark-purple, 10));
+		    		margin: 0 auto;
+
+		    		@include media($mobile) {
+		    			width: 40%;
+		    			font-size: .8em;
+		    		}
+		    	    		    		
+		    	}
+	    	}
+
+	}
+}

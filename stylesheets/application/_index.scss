@@ -80,7 +80,7 @@ section {
 	    	div.registreer {
 	    		text-align: center;
 		    	.button {
-		    		@include button(shiny, $dark-purple);
+		    		@include button(shiny, lighten($dark-purple, 10));
 		    		margin: 0 auto;
 
 		    		@include media($mobile) {
