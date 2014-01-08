@@ -654,6 +654,9 @@ p {
     p {
       font-size: .9em; } }
 
+address {
+  margin-bottom: 0; }
+
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2323,6 +2326,9 @@ section.colloquium.content {
         font-size: .9em; }
     section.colloquium.content article div.programma {
       margin-top: 3.125em; }
+      @media screen and (max-width: 768px) {
+        section.colloquium.content article div.programma ul li {
+          font-size: .9em; } }
       @media screen and (max-width: 480px) {
         section.colloquium.content article div.programma ul li {
           font-size: .8em; } }
@@ -2391,6 +2397,37 @@ section.colloquium.content {
           section.colloquium.content aside div.registreer .button {
             width: 40%;
             font-size: .8em; } }
+
+section.jaarboek.content {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125em; }
+  section.jaarboek.content:before, section.jaarboek.content:after {
+    content: " ";
+    display: table; }
+  section.jaarboek.content:after {
+    clear: both; }
+  section.jaarboek.content article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    section.jaarboek.content article:last-child {
+      margin-right: 0; }
+    section.jaarboek.content article div.edities {
+      margin-top: 3.125em; }
+  section.jaarboek.content aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    section.jaarboek.content aside:last-child {
+      margin-right: 0; }
+    section.jaarboek.content aside img {
+      padding: 3px;
+      border: 1px solid #ccc; }
 
 div.footer-spacer {
   background: white;

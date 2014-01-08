@@ -1,0 +1,21 @@
+section.jaarboek.content {
+	@include outer-container;
+	margin-top: em(50);
+
+	article {
+		@include span-columns(7);
+
+		div.edities {
+			margin-top: em(50);
+		}
+	}
+
+	aside {
+		@include span-columns(5);
+		
+		img {
+			@include pad(3px);
+		border: 1px solid #ccc;
+		}
+	}
+}

@@ -27,6 +27,10 @@ section.colloquium.content {
             	@extend %default-ul;
 
             	li{
+            		@include media($tablet) {
+            			font-size: .9em;
+            		}
+            		
             		@include media($mobile) {
             			font-size: .8em;
             		}
