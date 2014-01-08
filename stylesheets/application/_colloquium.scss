@@ -9,6 +9,11 @@ section.colloquium.content {
 			@include pad(0 1em);
 		}
 
+		@include media($mobile) {
+			position: static;
+			@include fill-parent;
+		}
+
 		div.practical {
 			margin-bottom: 1.5em;
 			p {
@@ -20,6 +25,12 @@ section.colloquium.content {
 			margin-top: em(50);
 			ul {
             	@extend %default-ul;
+
+            	li{
+            		@include media($mobile) {
+            			font-size: .8em;
+            		}
+            	}
         	}
 		}
 	}
@@ -34,6 +45,15 @@ section.colloquium.content {
 
 		@include media($tablet) {
 			margin-left: 1em;
+		}
+
+		@include media($mobile) {
+			position: static;
+			@include fill-parent;
+			margin-top: em(10);
+			margin-left: .5em;
+			width: 95%;
+			text-align: center;
 		}
 
 		h2 {

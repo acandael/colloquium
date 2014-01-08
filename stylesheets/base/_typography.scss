@@ -7,6 +7,11 @@ h1 {
 	@include media($tablet) {
 		font-size: 1.2em;
 	}
+
+	@include media($mobile) {
+		font-size: 1em;
+		text-align: center;
+	}
 }
 
 h2 {
@@ -17,6 +22,11 @@ h2 {
 
 	@include media($tablet) {
 		font-size: 1em;
+	}
+
+	@include media($mobile) {
+		font-size: .9em;
+		text-align: center;
 	}
 }
 
@@ -29,6 +39,11 @@ h3 {
 	@include media($tablet) {
 		font-size: .9em;
 	}
+
+	@include media($mobile) {
+		font-size: .8em;
+		text-align: center;
+	}
 }
 
 p {
@@ -39,3 +54,4 @@ p {
 		font-size: .9em;
 	}
 }
+

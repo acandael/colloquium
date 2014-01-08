@@ -616,6 +616,10 @@ h1 {
   @media screen and (max-width: 768px) {
     h1 {
       font-size: 1.2em; } }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1em;
+      text-align: center; } }
 
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -625,6 +629,10 @@ h2 {
   @media screen and (max-width: 768px) {
     h2 {
       font-size: 1em; } }
+  @media screen and (max-width: 480px) {
+    h2 {
+      font-size: .9em;
+      text-align: center; } }
 
 h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -634,6 +642,10 @@ h3 {
   @media screen and (max-width: 768px) {
     h3 {
       font-size: .9em; } }
+  @media screen and (max-width: 480px) {
+    h3 {
+      font-size: .8em;
+      text-align: center; } }
 
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2301,12 +2313,19 @@ section.colloquium.content {
     @media screen and (max-width: 768px) {
       section.colloquium.content article {
         padding: 0 1em; } }
+    @media screen and (max-width: 480px) {
+      section.colloquium.content article {
+        position: static;
+        width: 100%; } }
     section.colloquium.content article div.practical {
       margin-bottom: 1.5em; }
       section.colloquium.content article div.practical p {
         font-size: .9em; }
     section.colloquium.content article div.programma {
       margin-top: 3.125em; }
+      @media screen and (max-width: 480px) {
+        section.colloquium.content article div.programma ul li {
+          font-size: .8em; } }
   section.colloquium.content aside {
     float: left;
     display: block;
@@ -2325,6 +2344,14 @@ section.colloquium.content {
     @media screen and (max-width: 768px) {
       section.colloquium.content aside {
         margin-left: 1em; } }
+    @media screen and (max-width: 480px) {
+      section.colloquium.content aside {
+        position: static;
+        width: 100%;
+        margin-top: 0.625em;
+        margin-left: .5em;
+        width: 95%;
+        text-align: center; } }
     section.colloquium.content aside h2 {
       text-align: center; }
     section.colloquium.content aside p {
