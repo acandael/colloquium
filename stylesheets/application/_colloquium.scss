@@ -4,6 +4,20 @@ section.colloquium.content {
 
 	article {
 		@include span-columns(7);
+
+		div.practical {
+			margin-bottom: 1.5em;
+			p {
+				font-size: .9em;
+			}
+		}
+
+		div.programma {
+			margin-top: em(50);
+			ul {
+            	@extend %default-ul;
+        	}
+		}
 	}
 
 	aside {
