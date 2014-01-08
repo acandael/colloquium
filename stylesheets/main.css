@@ -613,18 +613,27 @@ h1 {
   color: #333366;
   font-size: 1.5em;
   margin-bottom: .5em; }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 1.2em; } }
 
 h2 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333366;
   font-size: 1.2em;
   margin-bottom: .5em; }
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 1em; } }
 
 h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333366;
   font-size: 1em;
   margin-bottom: .5em; }
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: .9em; } }
 
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2033,6 +2042,8 @@ header.nav {
       header.nav nav li a {
         color: rgba(250, 250, 250, 0.8);
         font-size: .9em; }
+        header.nav nav li a.active {
+          color: #fafafa; }
         header.nav nav li a:hover {
           color: #fafafa; }
         @media screen and (max-width: 768px) {
@@ -2287,6 +2298,9 @@ section.colloquium.content {
     width: 57.35098%; }
     section.colloquium.content article:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.colloquium.content article {
+        padding: 0 1em; } }
     section.colloquium.content article div.practical {
       margin-bottom: 1.5em; }
       section.colloquium.content article div.practical p {
@@ -2308,6 +2322,9 @@ section.colloquium.content {
     border: 2px solid #b3b3ff; }
     section.colloquium.content aside:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.colloquium.content aside {
+        margin-left: 1em; } }
     section.colloquium.content aside h2 {
       text-align: center; }
     section.colloquium.content aside p {

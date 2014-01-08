@@ -5,6 +5,10 @@ section.colloquium.content {
 	article {
 		@include span-columns(7);
 
+		@include media($tablet) {
+			@include pad(0 1em);
+		}
+
 		div.practical {
 			margin-bottom: 1.5em;
 			p {
@@ -23,14 +27,14 @@ section.colloquium.content {
 	aside {
 		@include span-columns(4);
 		@include shift(1);
-
 		border-radius: 6px;
-
 		@include pad(1em);
-
 		@include linear-gradient($light-purple, darken($light-purple, 10));
-
 		border: 2px solid darken($light-purple, 5);
+
+		@include media($tablet) {
+			margin-left: 1em;
+		}
 
 		h2 {
 			text-align: center;
