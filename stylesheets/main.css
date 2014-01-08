@@ -2419,6 +2419,10 @@ section.jaarboek.content {
     @media screen and (max-width: 768px) {
       section.jaarboek.content article {
         padding: 0 1em; } }
+    @media screen and (max-width: 480px) {
+      section.jaarboek.content article {
+        position: static;
+        width: 100%; } }
     section.jaarboek.content article div.edities {
       margin-top: 3.125em; }
   section.jaarboek.content aside {
@@ -2428,6 +2432,9 @@ section.jaarboek.content {
     width: 40.29137%; }
     section.jaarboek.content aside:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 480px) {
+      section.jaarboek.content aside {
+        display: none; } }
     section.jaarboek.content aside img {
       padding: 3px;
       border: 1px solid #ccc; }

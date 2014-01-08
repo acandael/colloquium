@@ -9,6 +9,11 @@ section.jaarboek.content {
 			@include pad(0 1em);
 		}
 
+		@include media($mobile) {
+			position: static;
+			@include fill-parent;
+		}
+
 		div.edities {
 			margin-top: em(50);
 		}
@@ -16,7 +21,10 @@ section.jaarboek.content {
 
 	aside {
 		@include span-columns(5);
-
+        
+        @include media($mobile) {
+        	display: none;
+        }
 		
 		
 		img {
