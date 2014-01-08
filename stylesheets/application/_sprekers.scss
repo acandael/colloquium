@@ -1,6 +1,9 @@
 section.sprekers.content{
 	@include outer-container;
 	margin-top: em(50);
+	@include media($mobile) {
+		margin-top: em(25);
+	}
 
 	@include media($tablet) {
 		@include pad(0 1em);
@@ -17,6 +20,13 @@ section.sprekers.content{
     	@include pad(0 1em);
     }
 
+    @include media ($mobile) {
+    	position: static;
+    	@include fill-parent;
+    	margin-bottom: em(25);
+    	margin-top: em(10);
+    }
+
     img {
 			float: right;
 			@include pad(3px);
@@ -25,15 +35,31 @@ section.sprekers.content{
 			@include media($tablet) {
 				max-width: 30%;
 			}
+
+			@include media($mobile) {
+				float: none;
+				@include fill-parent;
+				max-width: 95%;
+			}
 		}
 
 		h1 {
 			font-size: 1.2em;
+
+			@include media($mobile) {
+				font-size: 1em;
+			}
 		}
 
 		p {			
 			@include pad(0 1.5em 0 0);			
 			overflow: hidden;
+
+			@include media($mobile) {
+				@include pad(0 .2em);
+				font-size: .8em;
+				line-height: 1.5em;
+			}
 		}
 	}
 }

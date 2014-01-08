@@ -2409,6 +2409,9 @@ section.sprekers.content {
     display: table; }
   section.sprekers.content:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    section.sprekers.content {
+      margin-top: 1.5625em; } }
   @media screen and (max-width: 768px) {
     section.sprekers.content {
       padding: 0 1em; } }
@@ -2426,6 +2429,12 @@ section.sprekers.content {
         position: static;
         width: 100%;
         padding: 0 1em; } }
+    @media screen and (max-width: 480px) {
+      section.sprekers.content section.spreker {
+        position: static;
+        width: 100%;
+        margin-bottom: 1.5625em;
+        margin-top: 0.625em; } }
     section.sprekers.content section.spreker img {
       float: right;
       padding: 3px;
@@ -2433,11 +2442,24 @@ section.sprekers.content {
       @media screen and (max-width: 768px) {
         section.sprekers.content section.spreker img {
           max-width: 30%; } }
+      @media screen and (max-width: 480px) {
+        section.sprekers.content section.spreker img {
+          float: none;
+          width: 100%;
+          max-width: 95%; } }
     section.sprekers.content section.spreker h1 {
       font-size: 1.2em; }
+      @media screen and (max-width: 480px) {
+        section.sprekers.content section.spreker h1 {
+          font-size: 1em; } }
     section.sprekers.content section.spreker p {
       padding: 0 1.5em 0 0;
       overflow: hidden; }
+      @media screen and (max-width: 480px) {
+        section.sprekers.content section.spreker p {
+          padding: 0 0.2em;
+          font-size: .8em;
+          line-height: 1.5em; } }
 
 section.jaarboek.content {
   *zoom: 1;
