@@ -1,0 +1,39 @@
+section.sprekers.content{
+	@include outer-container;
+	margin-top: em(50);
+
+	@include media($tablet) {
+		@include pad(0 1em);
+	}
+
+	section.spreker {
+        @include span-columns(9);
+        margin-top: em(25);
+        margin-bottom: em(50);
+
+    @include media($tablet) {
+    	position: static;
+    	@include fill-parent;
+    	@include pad(0 1em);
+    }
+
+    img {
+			float: right;
+			@include pad(3px);
+			border: 1px solid #ccc;
+
+			@include media($tablet) {
+				max-width: 30%;
+			}
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}
+
+		p {			
+			@include pad(0 1.5em 0 0);			
+			overflow: hidden;
+		}
+	}
+}

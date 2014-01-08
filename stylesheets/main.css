@@ -2398,6 +2398,47 @@ section.colloquium.content {
             width: 40%;
             font-size: .8em; } }
 
+section.sprekers.content {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125em; }
+  section.sprekers.content:before, section.sprekers.content:after {
+    content: " ";
+    display: table; }
+  section.sprekers.content:after {
+    clear: both; }
+  @media screen and (max-width: 768px) {
+    section.sprekers.content {
+      padding: 0 1em; } }
+  section.sprekers.content section.spreker {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 74.41059%;
+    margin-top: 1.5625em;
+    margin-bottom: 3.125em; }
+    section.sprekers.content section.spreker:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.sprekers.content section.spreker {
+        position: static;
+        width: 100%;
+        padding: 0 1em; } }
+    section.sprekers.content section.spreker img {
+      float: right;
+      padding: 3px;
+      border: 1px solid #ccc; }
+      @media screen and (max-width: 768px) {
+        section.sprekers.content section.spreker img {
+          max-width: 30%; } }
+    section.sprekers.content section.spreker h1 {
+      font-size: 1.2em; }
+    section.sprekers.content section.spreker p {
+      padding: 0 1.5em 0 0;
+      overflow: hidden; }
+
 section.jaarboek.content {
   *zoom: 1;
   max-width: 68em;
