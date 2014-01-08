@@ -5,6 +5,10 @@ section.jaarboek.content {
 	article {
 		@include span-columns(7);
 
+		@include media($tablet) {
+			@include pad(0 1em);
+		}
+
 		div.edities {
 			margin-top: em(50);
 		}
@@ -12,10 +16,16 @@ section.jaarboek.content {
 
 	aside {
 		@include span-columns(5);
+
+		
 		
 		img {
 			@include pad(3px);
 		border: 1px solid #ccc;
+
+		  @include media($tablet) {
+			width: 95%;
+		}
 		}
 	}
 }
