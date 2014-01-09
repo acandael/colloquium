@@ -1,0 +1,29 @@
+section.contact.content {
+	@include outer-container;
+	margin-top: em(50);
+
+	article {
+		@include span-columns(7);
+	}
+
+	aside {
+		@include span-columns(4);
+		@include shift(1);
+		@include pad(1em 1em 1em 2em);
+		@include linear-gradient($light-purple, darken($light-purple, 10));
+		border: 2px solid darken($light-purple, 5);
+		border-radius: 6px;
+
+		p {
+			margin-top: em(30);
+		}
+
+		a {
+			color: $dark-purple;
+
+			&:hover {
+				color: lighten($dark-purple, 25);
+			}
+		}
+	}
+}

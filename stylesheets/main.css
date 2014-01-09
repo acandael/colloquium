@@ -2505,6 +2505,46 @@ section.jaarboek.content {
         section.jaarboek.content aside img {
           width: 95%; } }
 
+section.contact.content {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3.125em; }
+  section.contact.content:before, section.contact.content:after {
+    content: " ";
+    display: table; }
+  section.contact.content:after {
+    clear: both; }
+  section.contact.content article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    section.contact.content article:last-child {
+      margin-right: 0; }
+  section.contact.content aside {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%;
+    margin-left: 8.5298%;
+    padding: 1em 1em 1em 2em;
+    background-color: #ccccff;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccccff), color-stop(100%, #9999ff));
+    background-image: -webkit-linear-gradient(#ccccff, #9999ff);
+    background-image: linear-gradient(#ccccff, #9999ff);
+    border: 2px solid #b3b3ff;
+    border-radius: 6px; }
+    section.contact.content aside:last-child {
+      margin-right: 0; }
+    section.contact.content aside p {
+      margin-top: 1.875em; }
+    section.contact.content aside a {
+      color: #333366; }
+      section.contact.content aside a:hover {
+        color: #6666b3; }
+
 div.footer-spacer {
   background: white;
   height: 50px; }
