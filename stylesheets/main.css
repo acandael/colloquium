@@ -2523,6 +2523,9 @@ section.contact.content {
     width: 57.35098%; }
     section.contact.content article:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.contact.content article {
+        padding: 0 1em; } }
   section.contact.content aside {
     float: left;
     display: block;
@@ -2538,6 +2541,10 @@ section.contact.content {
     border-radius: 6px; }
     section.contact.content aside:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 768px) {
+      section.contact.content aside {
+        margin-left: 2em;
+        padding: 1em 1em 1em 1em; } }
     section.contact.content aside p {
       margin-top: 1.875em; }
     section.contact.content aside a {

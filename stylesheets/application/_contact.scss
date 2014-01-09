@@ -4,6 +4,10 @@ section.contact.content {
 
 	article {
 		@include span-columns(7);
+
+		@include media($tablet) {
+			@include pad(0 1em);
+		}
 	}
 
 	aside {
@@ -13,6 +17,11 @@ section.contact.content {
 		@include linear-gradient($light-purple, darken($light-purple, 10));
 		border: 2px solid darken($light-purple, 5);
 		border-radius: 6px;
+
+		@include media($tablet) {
+			margin-left: 2em;
+			@include pad(1em 1em 1em 1em);				
+		}
 
 		p {
 			margin-top: em(30);
