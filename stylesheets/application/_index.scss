@@ -43,7 +43,8 @@ section {
     	        }
 
     	        @include media($mobile) {
-    	        	font-size: 1em;    	        	
+    	        	font-size: 1em;
+    	        	text-align: left;   	        	
     	        }
 	    	}
 
@@ -74,18 +75,21 @@ section {
 	    		@include media($mobile) {
 	    			font-size: .8em;
 	    			margin-right: 1em;
+	    			margin-bottom: 1.2em;
 	    		}
 	    	}
 
 	    	div.registreer {
 	    		text-align: center;
+	    		line-height: 1em;
 		    	.button {
 		    		@include button(shiny, lighten($dark-purple, 10));
 		    		margin: 0 auto;
 
 		    		@include media($mobile) {
-		    			width: 40%;
+		    			width: 40%;		    			
 		    			font-size: .8em;
+
 		    		}
 		    	    		    		
 		    	}
@@ -163,16 +167,31 @@ section.home.content {
 div.sponsor-spacer {
   background: $white;
   height: 80px;
+  @include media($mobile) {
+  	height: 40px;
+  }
 }
 
 section.sponsors {
 	@include outer-container;
+
 	ul.sponsors {
 			@include span-columns(12);
+			text-align: center;
 
 			li.block {
 				@include span-columns(3);
 				@include omega(4n);
+
+				@include media($mobile) {
+					position: static;
+					@include fill-parent;
+					@include pad(1em);
+
+					img { 
+						max-width: 50%;
+					}
+				}
 			}
 		}
 }

@@ -2170,7 +2170,8 @@ section {
             font-size: 1.2em; } }
         @media screen and (max-width: 480px) {
           section #hero article h1 {
-            font-size: 1em; } }
+            font-size: 1em;
+            text-align: left; } }
       section #hero article .date {
         color: white;
         margin-left: 100px; }
@@ -2192,9 +2193,11 @@ section {
         @media screen and (max-width: 480px) {
           section #hero article .body {
             font-size: .8em;
-            margin-right: 1em; } }
+            margin-right: 1em;
+            margin-bottom: 1.2em; } }
       section #hero article div.registreer {
-        text-align: center; }
+        text-align: center;
+        line-height: 1em; }
         section #hero article div.registreer .button {
           border: 1px solid #000037;
           border-bottom: 1px solid #00000e;
@@ -2298,6 +2301,9 @@ section.home.content {
 div.sponsor-spacer {
   background: white;
   height: 80px; }
+  @media screen and (max-width: 480px) {
+    div.sponsor-spacer {
+      height: 40px; } }
 
 section.sponsors {
   *zoom: 1;
@@ -2313,7 +2319,8 @@ section.sponsors {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
     section.sponsors ul.sponsors:last-child {
       margin-right: 0; }
     section.sponsors ul.sponsors li.block {
@@ -2327,6 +2334,13 @@ section.sponsors {
         margin-right: 0; }
       section.sponsors ul.sponsors li.block:nth-child(4n+1) {
         clear: left; }
+      @media screen and (max-width: 480px) {
+        section.sponsors ul.sponsors li.block {
+          position: static;
+          width: 100%;
+          padding: 1em; }
+          section.sponsors ul.sponsors li.block img {
+            max-width: 50%; } }
 
 section.colloquium.content {
   *zoom: 1;
