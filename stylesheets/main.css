@@ -2516,6 +2516,9 @@ section.contact.content {
     display: table; }
   section.contact.content:after {
     clear: both; }
+  @media screen and (max-width: 480px) {
+    section.contact.content {
+      margin-top: 1.5625em; } }
   section.contact.content article {
     float: left;
     display: block;
@@ -2526,6 +2529,10 @@ section.contact.content {
     @media screen and (max-width: 768px) {
       section.contact.content article {
         padding: 0 1em; } }
+    @media screen and (max-width: 480px) {
+      section.contact.content article {
+        position: static;
+        width: 100%; } }
   section.contact.content aside {
     float: left;
     display: block;
@@ -2545,6 +2552,14 @@ section.contact.content {
       section.contact.content aside {
         margin-left: 2em;
         padding: 1em 1em 1em 1em; } }
+    @media screen and (max-width: 480px) {
+      section.contact.content aside {
+        position: static;
+        width: 100%;
+        width: 95%;
+        margin-top: 0.9375em;
+        margin-left: .5em;
+        text-align: center; } }
     section.contact.content aside p {
       margin-top: 1.875em; }
     section.contact.content aside a {

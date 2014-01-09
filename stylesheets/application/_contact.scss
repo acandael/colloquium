@@ -2,11 +2,20 @@ section.contact.content {
 	@include outer-container;
 	margin-top: em(50);
 
+	@include media($mobile) {
+		margin-top: em(25);
+	}
+
 	article {
 		@include span-columns(7);
 
 		@include media($tablet) {
 			@include pad(0 1em);
+		}
+
+		@include media($mobile) {
+			position: static;
+			@include fill-parent;
 		}
 	}
 
@@ -21,6 +30,15 @@ section.contact.content {
 		@include media($tablet) {
 			margin-left: 2em;
 			@include pad(1em 1em 1em 1em);				
+		}
+
+		@include media($mobile) {
+			position: static;
+			@include fill-parent;
+			width: 95%;
+			margin-top: em(15);
+			margin-left: .5em;
+			text-align: center;
 		}
 
 		p {
