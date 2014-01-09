@@ -157,5 +157,23 @@ section.home.content {
 				margin-top: em(20);
 			}
 		}
+
 	}
+
+div.sponsor-spacer {
+  background: $white;
+  height: 80px;
+}
+
+section.sponsors {
+	@include outer-container;
+	ul.sponsors {
+			@include span-columns(12);
+
+			li.block {
+				@include span-columns(3);
+				@include omega(4n);
+			}
+		}
+}
 

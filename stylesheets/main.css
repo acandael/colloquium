@@ -2295,6 +2295,39 @@ section.home.content {
       text-align: right;
       margin-top: 1.25em; }
 
+div.sponsor-spacer {
+  background: white;
+  height: 80px; }
+
+section.sponsors {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  section.sponsors:before, section.sponsors:after {
+    content: " ";
+    display: table; }
+  section.sponsors:after {
+    clear: both; }
+  section.sponsors ul.sponsors {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    section.sponsors ul.sponsors:last-child {
+      margin-right: 0; }
+    section.sponsors ul.sponsors li.block {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      section.sponsors ul.sponsors li.block:last-child {
+        margin-right: 0; }
+      section.sponsors ul.sponsors li.block:nth-child(4n) {
+        margin-right: 0; }
+      section.sponsors ul.sponsors li.block:nth-child(4n+1) {
+        clear: left; }
+
 section.colloquium.content {
   *zoom: 1;
   max-width: 68em;
