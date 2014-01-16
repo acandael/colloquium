@@ -2156,6 +2156,9 @@ section {
           width: 100%;
           margin-left: 1em;
           padding-left: 0px; } }
+      @media screen and (max-width: 768px) {
+        section #hero article {
+          padding-left: 3em; } }
       @media screen and (max-width: 480px) {
         section #hero article {
           margin-left: .5em; } }
@@ -2164,7 +2167,7 @@ section {
         font-family: 'Droid Sans', sans-serif; }
         @media screen and (max-width: 768px) {
           section #hero article h1 {
-            font-size: 1.2em; } }
+            font-size: 1em; } }
         @media screen and (max-width: 480px) {
           section #hero article h1 {
             font-size: 1em;
