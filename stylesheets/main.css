@@ -2129,15 +2129,11 @@ section {
   section:after {
     clear: both; }
   section #hero {
-    background-color: #ccccff;
-    background-color: #ccccff;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccccff), color-stop(100%, #9999ff));
-    background-image: -webkit-linear-gradient(#ccccff, #9999ff);
-    background-image: linear-gradient(#ccccff, #9999ff);
+    background-color: #ffd100;
     margin-top: 3.125em;
     height: 20.8125em;
     border-radius: 0.625em;
-    border: 2px solid #b3b3ff; }
+    border: 3px solid #e6bc00; }
     @media screen and (max-width: 768px) {
       section #hero {
         height: 18.75em;
@@ -2154,7 +2150,7 @@ section {
       margin-right: 2.35765%;
       width: 48.82117%;
       margin-top: 1.5em;
-      padding-left: 2em; }
+      padding-left: 4em; }
       section #hero article:last-child {
         margin-right: 0; }
       @media screen and (max-width: 480px) {
@@ -2164,7 +2160,8 @@ section {
           margin-left: 1em;
           padding-left: 0px; } }
       section #hero article h1 {
-        font-size: 1.5em; }
+        font-size: 1.2em;
+        font-family: 'Droid Sans', sans-serif; }
         @media screen and (max-width: 768px) {
           section #hero article h1 {
             font-size: 1.2em; } }
@@ -2180,6 +2177,7 @@ section {
             margin-left: 0px;
             font-size: .8em; } }
       section #hero article .body {
+        font-family: 'Lato', sans-serif;
         margin-top: 1.5em;
         margin-bottom: 2em;
         font-weight: bold;
