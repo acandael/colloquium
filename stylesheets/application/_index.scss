@@ -204,5 +204,9 @@ section.sponsors {
 
 div.rule {
 	@include outer-container;
+
+	@include media ($tablet) {
+		@include pad(0 em(20));
+	}
 }
 

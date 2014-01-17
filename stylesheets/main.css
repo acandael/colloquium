@@ -2354,6 +2354,9 @@ div.rule {
     display: table; }
   div.rule:after {
     clear: both; }
+  @media screen and (max-width: 768px) {
+    div.rule {
+      padding: 0 1.25em; } }
 
 section.colloquium.content {
   *zoom: 1;
