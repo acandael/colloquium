@@ -2129,11 +2129,11 @@ section {
   section:after {
     clear: both; }
   section #hero {
-    background-color: #ffd100;
+    background-color: #00b233;
     margin-top: 3.125em;
     height: 20.8125em;
     border-radius: 0.625em;
-    border: 3px solid #e6bc00; }
+    border: 3px solid #00992c; }
     @media screen and (max-width: 768px) {
       section #hero {
         height: 18.75em;
@@ -2180,7 +2180,6 @@ section {
             margin-left: 0px;
             font-size: .8em; } }
       section #hero article .body {
-        font-family: 'Lato', sans-serif;
         margin-top: 1.5em;
         margin-bottom: 2em;
         font-weight: bold;
@@ -2301,7 +2300,7 @@ section.home.content {
 
 div.sponsor-spacer {
   background: white;
-  height: 80px; }
+  height: 50px; }
   @media screen and (max-width: 480px) {
     div.sponsor-spacer {
       height: 40px; } }
@@ -2328,13 +2327,15 @@ section.sponsors {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
+      width: 14.70196%; }
       section.sponsors ul.sponsors li.block:last-child {
         margin-right: 0; }
-      section.sponsors ul.sponsors li.block:nth-child(4n) {
+      section.sponsors ul.sponsors li.block:nth-child(6n) {
         margin-right: 0; }
-      section.sponsors ul.sponsors li.block:nth-child(4n+1) {
+      section.sponsors ul.sponsors li.block:nth-child(6n+1) {
         clear: left; }
+      section.sponsors ul.sponsors li.block img {
+        max-width: 60%; }
       @media screen and (max-width: 480px) {
         section.sponsors ul.sponsors li.block {
           position: static;
@@ -2342,6 +2343,17 @@ section.sponsors {
           padding: 1em; }
           section.sponsors ul.sponsors li.block img {
             max-width: 50%; } }
+
+div.rule {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  div.rule:before, div.rule:after {
+    content: " ";
+    display: table; }
+  div.rule:after {
+    clear: both; }
 
 section.colloquium.content {
   *zoom: 1;
