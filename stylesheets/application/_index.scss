@@ -190,15 +190,15 @@ section.sponsors {
 
 			li.block {
 				@include span-columns(2);
-				@include omega(6n);
-				                
+				@include omega(7n);
+
 				div.label {
 				  font-size: .8em;
 				  font-weight: 700;
 				}
 
                 img {
-                	max-width: 80%;
+                	
                 	@include media($mobile) {
                 		max-width: 30%;
                 	}

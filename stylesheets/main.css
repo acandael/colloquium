@@ -2325,18 +2325,16 @@ section.sponsors ul.sponsors {
     width: 14.70196%; }
     section.sponsors ul.sponsors li.block:last-child {
       margin-right: 0; }
-    section.sponsors ul.sponsors li.block:nth-child(6n) {
+    section.sponsors ul.sponsors li.block:nth-child(7n) {
       margin-right: 0; }
-    section.sponsors ul.sponsors li.block:nth-child(6n+1) {
+    section.sponsors ul.sponsors li.block:nth-child(7n+1) {
       clear: left; }
     section.sponsors ul.sponsors li.block div.label {
       font-size: .8em;
       font-weight: 700; }
-    section.sponsors ul.sponsors li.block img {
-      max-width: 80%; }
-      @media screen and (max-width: 480px) {
-        section.sponsors ul.sponsors li.block img {
-          max-width: 30%; } }
+    @media screen and (max-width: 480px) {
+      section.sponsors ul.sponsors li.block img {
+        max-width: 30%; } }
     @media screen and (max-width: 480px) {
       section.sponsors ul.sponsors li.block {
         position: static;
