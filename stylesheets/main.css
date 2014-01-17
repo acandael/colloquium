@@ -2141,6 +2141,9 @@ section {
         margin-left: auto;
         margin-right: auto;
         width: 95%; } }
+    @media screen and (max-width: 480px) {
+      section #hero {
+        height: 16.25em; } }
     section #hero article {
       float: left;
       display: block;
@@ -2150,18 +2153,15 @@ section {
       padding-left: 4em; }
       section #hero article:last-child {
         margin-right: 0; }
+      @media screen and (max-width: 768px) {
+        section #hero article {
+          padding-left: 3em; } }
       @media screen and (max-width: 480px) {
         section #hero article {
           position: static;
           width: 100%;
           margin-left: 1em;
           padding-left: 0px; } }
-      @media screen and (max-width: 768px) {
-        section #hero article {
-          padding-left: 3em; } }
-      @media screen and (max-width: 480px) {
-        section #hero article {
-          margin-left: .5em; } }
       section #hero article h1 {
         font-size: 1.2em;
         font-family: 'Droid Sans', sans-serif; }
@@ -2198,6 +2198,10 @@ section {
       section #hero article div.registreer {
         text-align: center;
         line-height: 1em; }
+        @media screen and (max-width: 480px) {
+          section #hero article div.registreer {
+            position: absolute;
+            left: 100px; } }
         section #hero article div.registreer .button {
           border: 1px solid #000037;
           border-bottom: 1px solid #00000e;
@@ -2229,7 +2233,6 @@ section {
             cursor: not-allowed; }
           @media screen and (max-width: 480px) {
             section #hero article div.registreer .button {
-              width: 40%;
               font-size: .8em; } }
     section #hero #poster {
       padding: 1.125em 3.125em;
@@ -2336,13 +2339,14 @@ section.sponsors {
         clear: left; }
       section.sponsors ul.sponsors li.block img {
         max-width: 60%; }
+        @media screen and (max-width: 480px) {
+          section.sponsors ul.sponsors li.block img {
+            max-width: 30%; } }
       @media screen and (max-width: 480px) {
         section.sponsors ul.sponsors li.block {
           position: static;
           width: 100%;
-          padding: 1em; }
-          section.sponsors ul.sponsors li.block img {
-            max-width: 50%; } }
+          padding: 0.5em; } }
 
 div.rule {
   *zoom: 1;

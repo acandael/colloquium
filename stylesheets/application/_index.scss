@@ -4,8 +4,7 @@ section {
 	#hero {      
       background-color: $green;
       //@include linear-gradient(lighten($yellow, 10), $yellow);
-      margin-top: em(50);
-      
+      margin-top: em(50);      
       height: em(333);
       border-radius: em(10);
       border: 3px solid darken($green, 5);
@@ -16,28 +15,29 @@ section {
       	margin-left: auto;
       	margin-right: auto;
       	width: 95%
+      }
+
+      @include media($mobile) {
+      	height: em(260);
       }     
 
      
 	    article {
 	    	@include span-columns(6);    	
 	      	margin-top: 1.5em;
-	      	padding-left: 4em;
-
-	      	 @include media($mobile) {
-      			position: static;
-      			@include fill-parent;
-      			margin-left: 1em;
-      			padding-left: 0px;
-      		}
+	      	padding-left: 4em;	      	 
 
       		@include media($tablet) {
       			padding-left: 3em;
       		}
 
       		@include media($mobile) {
-      			margin-left: .5em;
+      			position: static;
+      			@include fill-parent;
+      			margin-left: 1em;
+      			padding-left: 0px;
       		}
+      		
 	      	
 	    	h1 {
 	    		font-size: 1.2em;
@@ -87,14 +87,19 @@ section {
 	    	div.registreer {
 	    		text-align: center;
 	    		line-height: 1em;
+                
+                @include media($mobile) {
+                	 position: absolute;
+                	 left: 100px;
+                }
 		    	.button {
 		    		@include button(shiny, lighten($dark-purple, 10));
 		    		margin: 0 auto;
 
 		    		@include media($mobile) {
-		    			width: 40%;		    			
+		    			//width: 40%;		    			
 		    			font-size: .8em;
-
+                     
 		    		}
 		    	    		    		
 		    	}
@@ -188,15 +193,16 @@ section.sponsors {
 				@include omega(6n);
                 img {
                 	max-width: 60%;
+                	@include media($mobile) {
+                		max-width: 30%;
+                	}
                 }
+
 				@include media($mobile) {
 					position: static;
 					@include fill-parent;
-					@include pad(1em);
-
-					img { 
-						max-width: 50%;
-					}
+					@include pad(.5em);
+					
 				}
 			}
 		}
