@@ -2092,6 +2092,8 @@ header.nav {
     text-align: right; }
     header.nav div.language:last-child {
       margin-right: 0; }
+    header.nav div.language i {
+      color: rgba(250, 250, 250, 0.8); }
     header.nav div.language a {
       color: rgba(250, 250, 250, 0.8);
       font-size: .9em; }
@@ -2308,45 +2310,38 @@ div.sponsor-spacer {
     div.sponsor-spacer {
       height: 40px; } }
 
-section.sponsors {
-  *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  section.sponsors:before, section.sponsors:after {
-    content: " ";
-    display: table; }
-  section.sponsors:after {
-    clear: both; }
-  section.sponsors ul.sponsors {
+section.sponsors ul.sponsors {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  text-align: center; }
+  section.sponsors ul.sponsors:last-child {
+    margin-right: 0; }
+  section.sponsors ul.sponsors li.block {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 100%;
-    text-align: center; }
-    section.sponsors ul.sponsors:last-child {
+    width: 14.70196%; }
+    section.sponsors ul.sponsors li.block:last-child {
       margin-right: 0; }
-    section.sponsors ul.sponsors li.block {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 14.70196%; }
-      section.sponsors ul.sponsors li.block:last-child {
-        margin-right: 0; }
-      section.sponsors ul.sponsors li.block:nth-child(6n) {
-        margin-right: 0; }
-      section.sponsors ul.sponsors li.block:nth-child(6n+1) {
-        clear: left; }
-      section.sponsors ul.sponsors li.block img {
-        max-width: 60%; }
-        @media screen and (max-width: 480px) {
-          section.sponsors ul.sponsors li.block img {
-            max-width: 30%; } }
+    section.sponsors ul.sponsors li.block:nth-child(6n) {
+      margin-right: 0; }
+    section.sponsors ul.sponsors li.block:nth-child(6n+1) {
+      clear: left; }
+    section.sponsors ul.sponsors li.block div.label {
+      font-size: .8em;
+      font-weight: 700; }
+    section.sponsors ul.sponsors li.block img {
+      max-width: 80%; }
       @media screen and (max-width: 480px) {
-        section.sponsors ul.sponsors li.block {
-          position: static;
-          width: 100%;
-          padding: 0.5em; } }
+        section.sponsors ul.sponsors li.block img {
+          max-width: 30%; } }
+    @media screen and (max-width: 480px) {
+      section.sponsors ul.sponsors li.block {
+        position: static;
+        width: 100%;
+        padding: 0.5em; } }
 
 div.rule {
   *zoom: 1;

@@ -183,7 +183,7 @@ div.sponsor-spacer {
 }
 
 section.sponsors {
-	@include outer-container;    
+	   
 	ul.sponsors {
 			@include span-columns(12);
 			text-align: center;
@@ -191,8 +191,14 @@ section.sponsors {
 			li.block {
 				@include span-columns(2);
 				@include omega(6n);
+				                
+				div.label {
+				  font-size: .8em;
+				  font-weight: 700;
+				}
+
                 img {
-                	max-width: 60%;
+                	max-width: 80%;
                 	@include media($mobile) {
                 		max-width: 30%;
                 	}

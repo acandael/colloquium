@@ -124,6 +124,10 @@ header.nav {
         @include span-columns(3);
         text-align: right;
 
+        i {
+            color: rgba(250, 250, 250, 0.8);
+        }
+
         a {
             color: rgba(250, 250, 250, 0.8);
             font-size: .9em;
