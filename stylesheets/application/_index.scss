@@ -1,13 +1,12 @@
 section {
 	@include outer-container;
-
+    background: $brokenwhite;
 	#hero {      
-      background-color: $green;
-      //@include linear-gradient(lighten($yellow, 10), $yellow);
+      background-color: lighten($orange, 10);      
       margin-top: em(50);      
       height: em(333);
       border-radius: em(10);
-      border: 3px solid darken($green, 5);
+      border: 3px solid darken($orange, 5);
 
       @include media($tablet) {
       	height: em(300);
@@ -67,6 +66,7 @@ section {
 	    		margin-bottom: 2em;
 	    		font-weight: bold;
 	    		line-height: 2em;
+	    		color: darken($bluegray, 25);
 
 
 	    		@include media($tablet) {
@@ -93,7 +93,7 @@ section {
                 	 left: 100px;
                 }
 		    	.button {
-		    		@include button(shiny, lighten($dark-purple, 10));
+		    		@include button(shiny, lighten($bluegray, 10));
 		    		margin: 0 auto;
 
 		    		@include media($mobile) {
@@ -109,7 +109,7 @@ section {
 	    	@include pad(em(18) em(50));
 	    	@include span-columns(6);
 	    	img {      
-        box-shadow: 5px 5px 20px darken(#888888, 10);
+        //box-shadow: 5px 5px 20px darken(#888888, 10);
         border: 2px solid $medium-gray;
         height: auto;
 
@@ -128,7 +128,7 @@ section {
 
 section.home.content {
     	@include outer-container;
-        
+        background: $brokenwhite;
     	margin-top: em(30);
 
     	@include media($mobile) {
@@ -175,7 +175,7 @@ section.home.content {
 	}
 
 div.sponsor-spacer {
-  background: $white;
+  background: $brokenwhite;
   height: 50px;
   @include media($mobile) {
   	height: 40px;

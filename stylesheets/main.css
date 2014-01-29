@@ -610,7 +610,7 @@ dl {
 
 h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333366;
+  color: #335471;
   font-size: 1.5em;
   margin-bottom: .5em; }
   @media screen and (max-width: 768px) {
@@ -649,13 +649,16 @@ h3 {
 
 p {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333366; }
+  color: #4b7ca5; }
   @media screen and (max-width: 768px) {
     p {
       font-size: .9em; } }
 
 address {
   margin-bottom: 0; }
+
+body {
+  background-color: white !important; }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -1987,11 +1990,7 @@ address {
   content: "\f196"; }
 
 header.nav {
-  background: #333366;
-  background-color: #444488;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(100%, #333366));
-  background-image: -webkit-linear-gradient(#444488, #333366);
-  background-image: linear-gradient(#444488, #333366);
+  background: #6895bb;
   padding: 0.625em 1.25em;
   height: 3.125em; }
   header.nav div.logo {
@@ -2008,7 +2007,7 @@ header.nav {
   header.nav h1 {
     font-size: 1em; }
     header.nav h1 a {
-      color: rgba(250, 250, 250, 0.8); }
+      color: #2b475f; }
     @media screen and (max-width: 768px) {
       header.nav h1 {
         font-size: .7em; } }
@@ -2089,7 +2088,8 @@ header.nav {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    text-align: right; }
+    text-align: right;
+    color: rgba(250, 250, 250, 0.8); }
     header.nav div.language:last-child {
       margin-right: 0; }
     header.nav div.language i {
@@ -2124,18 +2124,19 @@ section {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  background: #f8f9fc; }
   section:before, section:after {
     content: " ";
     display: table; }
   section:after {
     clear: both; }
   section #hero {
-    background-color: #00b233;
+    background-color: #f1b873;
     margin-top: 3.125em;
     height: 20.8125em;
     border-radius: 0.625em;
-    border: 3px solid #00992c; }
+    border: 3px solid #eb942d; }
     @media screen and (max-width: 768px) {
       section #hero {
         height: 18.75em;
@@ -2185,7 +2186,8 @@ section {
         margin-top: 1.5em;
         margin-bottom: 2em;
         font-weight: bold;
-        line-height: 2em; }
+        line-height: 2em;
+        color: #335471; }
         @media screen and (max-width: 768px) {
           section #hero article .body {
             margin-top: 1em;
@@ -2205,31 +2207,31 @@ section {
             position: absolute;
             left: 100px; } }
         section #hero article div.registreer .button {
-          border: 1px solid #000037;
-          border-bottom: 1px solid #00000e;
+          border: 1px solid #163f7a;
+          border-bottom: 1px solid #0d2f51;
           border-radius: 5px;
-          box-shadow: inset 0 1px 0 0 #696194;
+          box-shadow: inset 0 1px 0 0 #b0cbd7;
           color: white;
           display: inline-block;
           font-size: 14px;
           font-weight: bold;
-          background-color: #444488;
-          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(50%, #0c1267), color-stop(50%, #000058), color-stop(100%, #00005a));
-          background-image: -webkit-linear-gradient(top, #444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
-          background-image: linear-gradient(to bottom,#444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
+          background-color: #8baecb;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8baecb), color-stop(50%, #537caa), color-stop(50%, #35639b), color-stop(100%, #3c689d));
+          background-image: -webkit-linear-gradient(top, #8baecb 0%, #537caa 50%, #35639b 50%, #3c689d 100%);
+          background-image: linear-gradient(to bottom,#8baecb 0%, #537caa 50%, #35639b 50%, #3c689d 100%);
           padding: 8px 20px;
           text-align: center;
           text-decoration: none;
-          text-shadow: 0 -1px 1px #000016;
+          text-shadow: 0 -1px 1px #002159;
           margin: 0 auto; }
           section #hero article div.registreer .button:hover:not(:disabled) {
             cursor: pointer;
-            background-color: #373576;
-            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #373576), color-stop(50%, #020655), color-stop(50%, #000046), color-stop(100%, #000049));
-            background-image: -webkit-linear-gradient(top, #373576 0%, #020655 50%, #000046 50%, #000049 100%);
-            background-image: linear-gradient(to bottom,#373576 0%, #020655 50%, #000046 50%, #000049 100%); }
+            background-color: #7e9fb9;
+            background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7e9fb9), color-stop(50%, #497098), color-stop(50%, #2e5989), color-stop(100%, #355e8c));
+            background-image: -webkit-linear-gradient(top, #7e9fb9 0%, #497098 50%, #2e5989 50%, #355e8c 100%);
+            background-image: linear-gradient(to bottom,#7e9fb9 0%, #497098 50%, #2e5989 50%, #355e8c 100%); }
           section #hero article div.registreer .button:active:not(:disabled) {
-            box-shadow: inset 0 0 20px 0 #00000e, 0 1px 0 white; }
+            box-shadow: inset 0 0 20px 0 #1c3a51, 0 1px 0 white; }
           section #hero article div.registreer .button:disabled {
             opacity: 0.5;
             cursor: not-allowed; }
@@ -2245,7 +2247,6 @@ section {
       section #hero #poster:last-child {
         margin-right: 0; }
       section #hero #poster img {
-        box-shadow: 5px 5px 20px #6f6f6f;
         border: 2px solid #999999;
         height: auto; }
         @media screen and (max-width: 480px) {
@@ -2260,6 +2261,7 @@ section.home.content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  background: #f8f9fc;
   margin-top: 1.875em; }
   section.home.content:before, section.home.content:after {
     content: " ";
@@ -2304,7 +2306,7 @@ section.home.content {
       margin-top: 1.25em; }
 
 div.sponsor-spacer {
-  background: white;
+  background: #f8f9fc;
   height: 50px; }
   @media screen and (max-width: 480px) {
     div.sponsor-spacer {
@@ -2400,11 +2402,8 @@ section.colloquium.content {
     margin-left: 8.5298%;
     border-radius: 6px;
     padding: 1em;
-    background-color: #ccccff;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccccff), color-stop(100%, #9999ff));
-    background-image: -webkit-linear-gradient(#ccccff, #9999ff);
-    background-image: linear-gradient(#ccccff, #9999ff);
-    border: 2px solid #b3b3ff; }
+    background: #f1b873;
+    border: 2px solid #eb942d; }
     section.colloquium.content aside:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
@@ -2425,31 +2424,31 @@ section.colloquium.content {
     section.colloquium.content aside div.registreer {
       text-align: center; }
       section.colloquium.content aside div.registreer .button {
-        border: 1px solid #000037;
-        border-bottom: 1px solid #00000e;
+        border: 1px solid #163f7a;
+        border-bottom: 1px solid #0d2f51;
         border-radius: 5px;
-        box-shadow: inset 0 1px 0 0 #696194;
+        box-shadow: inset 0 1px 0 0 #b0cbd7;
         color: white;
         display: inline-block;
         font-size: 14px;
         font-weight: bold;
-        background-color: #444488;
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(50%, #0c1267), color-stop(50%, #000058), color-stop(100%, #00005a));
-        background-image: -webkit-linear-gradient(top, #444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
-        background-image: linear-gradient(to bottom,#444488 0%, #0c1267 50%, #000058 50%, #00005a 100%);
+        background-color: #8baecb;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8baecb), color-stop(50%, #537caa), color-stop(50%, #35639b), color-stop(100%, #3c689d));
+        background-image: -webkit-linear-gradient(top, #8baecb 0%, #537caa 50%, #35639b 50%, #3c689d 100%);
+        background-image: linear-gradient(to bottom,#8baecb 0%, #537caa 50%, #35639b 50%, #3c689d 100%);
         padding: 8px 20px;
         text-align: center;
         text-decoration: none;
-        text-shadow: 0 -1px 1px #000016;
+        text-shadow: 0 -1px 1px #002159;
         margin: 0 auto; }
         section.colloquium.content aside div.registreer .button:hover:not(:disabled) {
           cursor: pointer;
-          background-color: #373576;
-          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #373576), color-stop(50%, #020655), color-stop(50%, #000046), color-stop(100%, #000049));
-          background-image: -webkit-linear-gradient(top, #373576 0%, #020655 50%, #000046 50%, #000049 100%);
-          background-image: linear-gradient(to bottom,#373576 0%, #020655 50%, #000046 50%, #000049 100%); }
+          background-color: #7e9fb9;
+          background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7e9fb9), color-stop(50%, #497098), color-stop(50%, #2e5989), color-stop(100%, #355e8c));
+          background-image: -webkit-linear-gradient(top, #7e9fb9 0%, #497098 50%, #2e5989 50%, #355e8c 100%);
+          background-image: linear-gradient(to bottom,#7e9fb9 0%, #497098 50%, #2e5989 50%, #355e8c 100%); }
         section.colloquium.content aside div.registreer .button:active:not(:disabled) {
-          box-shadow: inset 0 0 20px 0 #00000e, 0 1px 0 white; }
+          box-shadow: inset 0 0 20px 0 #1c3a51, 0 1px 0 white; }
         section.colloquium.content aside div.registreer .button:disabled {
           opacity: 0.5;
           cursor: not-allowed; }

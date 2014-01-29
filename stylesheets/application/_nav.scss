@@ -1,8 +1,8 @@
 header.nav {
     
     
-    background: $dark-purple;
-    @include linear-gradient(lighten($dark-purple, 10), $dark-purple);
+    background: $bluegray;
+    //@include linear-gradient(lighten($gray, 10), $dark-purple);
     padding: em(10) em(20);
     height: em(50);
 
@@ -19,7 +19,7 @@ header.nav {
         font-size: 1em;
 
         a {
-            color: rgba(250, 250, 250, 0.8);
+            color: darken($bluegray, 30)
         }
 
         @include media($tablet) {
@@ -123,7 +123,7 @@ header.nav {
     div.language {
         @include span-columns(3);
         text-align: right;
-
+        color: rgba(250, 250, 250, 0.8);
         i {
             color: rgba(250, 250, 250, 0.8);
         }

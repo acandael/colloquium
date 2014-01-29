@@ -44,8 +44,9 @@ section.colloquium.content {
 		@include shift(1);
 		border-radius: 6px;
 		@include pad(1em);
-		@include linear-gradient($light-purple, darken($light-purple, 10));
-		border: 2px solid darken($light-purple, 5);
+		background: lighten($orange, 10);
+		//@include linear-gradient($orange, darken($orange, 10));
+		border: 2px solid darken($orange, 5);
 
 		@include media($tablet) {
 			margin-left: 1em;
@@ -71,7 +72,7 @@ section.colloquium.content {
 		div.registreer {
 	    		text-align: center;
 		    	.button {
-		    		@include button(shiny, lighten($dark-purple, 10));
+		    		@include button(shiny, lighten($bluegray, 10));
 		    		margin: 0 auto;
 
 		    		@include media($mobile) {
