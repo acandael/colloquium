@@ -16,7 +16,7 @@ h1 {
 
 h2 {
 	font-family: $helvetica;
-	color: $dark-purple;
+	color: darken($bluegray, 25);
 	font-size: 1.2em;
 	margin-bottom: .5em;
 
@@ -32,7 +32,7 @@ h2 {
 
 h3 {
 	font-family: $helvetica;
-	color: $dark-purple;
+	color: darken($bluegray, 25);
 	font-size: 1em;
 	margin-bottom: .5em;
 
@@ -56,7 +56,6 @@ p {
 }
 
 ul {
-	font-size: .9em;
 	color: darken($bluegray, 10);
 }
 
