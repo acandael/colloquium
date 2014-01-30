@@ -36,6 +36,15 @@ section.colloquium.content {
             		}
             	}
         	}
+
+        	table {
+        		
+        		color: darken($bluegray, 10);
+        		td.hour {
+        			width: 20%;
+        		}
+        		
+        	}
 		}
 	}
 

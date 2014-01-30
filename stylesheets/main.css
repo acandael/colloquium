@@ -2397,6 +2397,10 @@ section.colloquium.content {
       @media screen and (max-width: 480px) {
         section.colloquium.content article div.programma ul li {
           font-size: .8em; } }
+      section.colloquium.content article div.programma table {
+        color: #4b7ca5; }
+        section.colloquium.content article div.programma table td.hour {
+          width: 20%; }
   section.colloquium.content aside {
     float: left;
     display: block;
