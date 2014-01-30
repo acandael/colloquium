@@ -2181,7 +2181,7 @@ section {
       section #hero article .date {
         color: #335471;
         font-weight: bold;
-        margin-left: 100px; }
+        text-align: center; }
         @media screen and (max-width: 480px) {
           section #hero article .date {
             margin-left: 0px;
