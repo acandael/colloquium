@@ -6,7 +6,7 @@ section {
       margin-top: em(50);      
       height: em(333);
       border-radius: em(10);
-      border: 3px solid darken($orange, 5);
+      border: 3px solid $orange;
 
       @include media($tablet) {
       	height: em(300);

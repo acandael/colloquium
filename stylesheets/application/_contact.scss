@@ -23,8 +23,8 @@ section.contact.content {
 		@include span-columns(4);
 		@include shift(1);
 		@include pad(1em 1em 1em 2em);
-		@include linear-gradient($light-purple, darken($light-purple, 10));
-		border: 2px solid darken($light-purple, 5);
+		background: lighten($orange, 10);
+		border: 3px solid $orange;
 		border-radius: 6px;
 
 		@include media($tablet) {
@@ -43,13 +43,14 @@ section.contact.content {
 
 		p {
 			margin-top: em(30);
+			color: darken($bluegray, 25);
 		}
 
 		a {
-			color: $dark-purple;
+			color: darken($bluegray, 25);
 
 			&:hover {
-				color: lighten($dark-purple, 25);
+				text-decoration: underline;
 			}
 		}
 	}

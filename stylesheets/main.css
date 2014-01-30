@@ -654,11 +654,15 @@ p {
     p {
       font-size: .9em; } }
 
+ul {
+  font-size: .9em;
+  color: #4b7ca5; }
+
 address {
   margin-bottom: 0; }
 
 body {
-  background-color: white !important; }
+  background-color: #f8f9fc; }
 
 /*!
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
@@ -2136,7 +2140,7 @@ section {
     margin-top: 3.125em;
     height: 20.8125em;
     border-radius: 0.625em;
-    border: 3px solid #eb942d; }
+    border: 3px solid #eda044; }
     @media screen and (max-width: 768px) {
       section #hero {
         height: 18.75em;
@@ -2403,7 +2407,7 @@ section.colloquium.content {
     border-radius: 6px;
     padding: 1em;
     background: #f1b873;
-    border: 2px solid #eb942d; }
+    border: 3px solid #eb942d; }
     section.colloquium.content aside:last-child {
       margin-right: 0; }
     @media screen and (max-width: 768px) {
@@ -2420,7 +2424,8 @@ section.colloquium.content {
     section.colloquium.content aside h2 {
       text-align: center; }
     section.colloquium.content aside p {
-      font-size: .9em; }
+      font-size: .9em;
+      color: #335471; }
     section.colloquium.content aside div.registreer {
       text-align: center; }
       section.colloquium.content aside div.registreer .button {
@@ -2599,11 +2604,8 @@ section.contact.content {
     width: 31.76157%;
     margin-left: 8.5298%;
     padding: 1em 1em 1em 2em;
-    background-color: #ccccff;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ccccff), color-stop(100%, #9999ff));
-    background-image: -webkit-linear-gradient(#ccccff, #9999ff);
-    background-image: linear-gradient(#ccccff, #9999ff);
-    border: 2px solid #b3b3ff;
+    background: #f1b873;
+    border: 3px solid #eda044;
     border-radius: 6px; }
     section.contact.content aside:last-child {
       margin-right: 0; }
@@ -2620,23 +2622,20 @@ section.contact.content {
         margin-left: .5em;
         text-align: center; } }
     section.contact.content aside p {
-      margin-top: 1.875em; }
+      margin-top: 1.875em;
+      color: #335471; }
     section.contact.content aside a {
-      color: #333366; }
+      color: #335471; }
       section.contact.content aside a:hover {
-        color: #6666b3; }
+        text-decoration: underline; }
 
 div.footer-spacer {
-  background: white;
+  background: #f8f9fc;
   height: 50px; }
 
 footer {
   height: 4.375em;
-  background: #333366;
-  background-color: #444488;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #444488), color-stop(100%, #333366));
-  background-image: -webkit-linear-gradient(#444488, #333366);
-  background-image: linear-gradient(#444488, #333366);
+  background: #6895bb;
   padding: 15px 20px; }
   @media screen and (max-width: 480px) {
     footer {

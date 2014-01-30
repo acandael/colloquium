@@ -1,13 +1,12 @@
 div.footer-spacer {
-  background: $white;
+  background: $brokenwhite;
   height: 50px;
 }
 
 footer {
     
 	height: em(70);
-	background: $dark-purple;
-	@include linear-gradient(lighten($dark-purple, 10), $dark-purple);
+	background: $bluegray;	
 	padding: 15px 20px;
 
 	@include media($mobile) {
