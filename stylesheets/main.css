@@ -2189,7 +2189,6 @@ section {
       section #hero article .body {
         margin-top: 1.5em;
         margin-bottom: 2em;
-        font-weight: bold;
         line-height: 2em;
         color: #335471; }
         @media screen and (max-width: 768px) {
