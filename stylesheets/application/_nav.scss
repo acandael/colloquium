@@ -1,19 +1,9 @@
 header.nav {
     
     
-    background: $bluegray;
-    //@include linear-gradient(lighten($gray, 10), $dark-purple);
+    background: $bluegray;    
     padding: em(10) em(20);
-    height: em(50);
-
-    div.logo {
-        @include span-columns(3);
-
-        @include media($mobile) {            
-            @include fill-parent;
-            margin-top: .5em;
-        }
-    }
+    height: em(50);    
 
     h1 {
         font-size: 1em;
@@ -45,10 +35,23 @@ header.nav {
         @include media($mobile) {
           display: block;
         }
-    }   
+    }     
 
-    nav {
-        @include span-columns(6);
+}
+
+div.logo {
+        @include span-columns(3);
+
+
+
+        @include media($mobile) {            
+            @include fill-parent;
+            margin-top: .5em;
+        }
+    }
+
+nav {
+        @include span-columns(6);         
 
         @include media($mobile) {
             @include fill-parent;
@@ -89,7 +92,7 @@ header.nav {
             }
 
             @include media($tablet) {
-                @include pad(0 .3em);
+                @include pad(0 .2em);
             }
 
             @include media($mobile) {            
@@ -120,7 +123,7 @@ header.nav {
         }
     }
 
-    div.language {
+div.language {
         @include span-columns(3);
         text-align: right;
         color: rgba(250, 250, 250, 0.8);
@@ -140,15 +143,17 @@ header.nav {
                 font-size: .7em;
             }
 
-        }
+        } 
+
+        @include media($tablet) {
+            @include span-columns(2);
+        }         
 
         @include media($mobile) {
             @include fill-parent;
             text-align: left;
         }      
     }    
-
-}
  /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
         header:before,
         header:after {

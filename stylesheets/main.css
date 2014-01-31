@@ -1996,17 +1996,6 @@ header.nav {
   background: #6895bb;
   padding: 0.625em 1.25em;
   height: 3.125em; }
-  header.nav div.logo {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    header.nav div.logo:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 480px) {
-      header.nav div.logo {
-        width: 100%;
-        margin-top: .5em; } }
   header.nav h1 {
     font-size: 1em; }
     header.nav h1 a {
@@ -2030,85 +2019,107 @@ header.nav {
     @media screen and (max-width: 480px) {
       header.nav i#nav-dropdown {
         display: block; } }
-  header.nav nav {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    header.nav nav:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 480px) {
-      header.nav nav {
-        width: 100%;
-        padding-top: 0; } }
-    @media screen and (max-width: 480px) {
-      header.nav nav ul {
-        display: none;
-        background: #333366;
-        opacity: .9;
-        margin-top: 1em;
-        margin-bottom: 1em;
-        border-radius: 6px; } }
-    header.nav nav li {
-      display: inline-block;
-      vertical-align: baseline;
-      zoom: 1;
-      *display: inline;
-      *vertical-align: auto;
-      padding: 0px 1em; }
-      header.nav nav li a {
-        color: rgba(250, 250, 250, 0.8);
-        font-size: .9em; }
-        header.nav nav li a.active {
-          color: #fafafa; }
-        header.nav nav li a:hover {
-          color: #fafafa; }
-        @media screen and (max-width: 768px) {
-          header.nav nav li a {
-            font-size: .7em; } }
-      @media screen and (max-width: 768px) {
-        header.nav nav li {
-          padding: 0 0.3em; } }
-      @media screen and (max-width: 480px) {
-        header.nav nav li {
-          width: 100%;
-          background: #ccccff;
-          padding-left: 0;
-          border-bottom: 1px solid #d9d9d9;
-          line-height: 2.1875em;
-          text-align: center; }
-          header.nav nav li:hover {
-            opacity: .9; }
-          header.nav nav li.active {
-            border-bottom: none;
-            color: white;
-            opacity: .9; }
-          header.nav nav li a {
-            border-bottom: none;
-            color: #333366; } }
-  header.nav div.language {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%;
-    text-align: right;
-    color: rgba(250, 250, 250, 0.8); }
-    header.nav div.language:last-child {
-      margin-right: 0; }
-    header.nav div.language i {
-      color: rgba(250, 250, 250, 0.8); }
-    header.nav div.language a {
+
+div.logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  div.logo:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    div.logo {
+      width: 100%;
+      margin-top: .5em; } }
+
+nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  nav:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 480px) {
+    nav {
+      width: 100%;
+      padding-top: 0; } }
+  @media screen and (max-width: 480px) {
+    nav ul {
+      display: none;
+      background: #333366;
+      opacity: .9;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      border-radius: 6px; } }
+  nav li {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    padding: 0px 1em; }
+    nav li a {
       color: rgba(250, 250, 250, 0.8);
       font-size: .9em; }
-      header.nav div.language a:hover {
+      nav li a.active {
+        color: #fafafa; }
+      nav li a:hover {
         color: #fafafa; }
       @media screen and (max-width: 768px) {
-        header.nav div.language a {
+        nav li a {
           font-size: .7em; } }
+    @media screen and (max-width: 768px) {
+      nav li {
+        padding: 0 0.2em; } }
     @media screen and (max-width: 480px) {
-      header.nav div.language {
+      nav li {
         width: 100%;
-        text-align: left; } }
+        background: #ccccff;
+        padding-left: 0;
+        border-bottom: 1px solid #d9d9d9;
+        line-height: 2.1875em;
+        text-align: center; }
+        nav li:hover {
+          opacity: .9; }
+        nav li.active {
+          border-bottom: none;
+          color: white;
+          opacity: .9; }
+        nav li a {
+          border-bottom: none;
+          color: #333366; } }
+
+div.language {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  text-align: right;
+  color: rgba(250, 250, 250, 0.8); }
+  div.language:last-child {
+    margin-right: 0; }
+  div.language i {
+    color: rgba(250, 250, 250, 0.8); }
+  div.language a {
+    color: rgba(250, 250, 250, 0.8);
+    font-size: .9em; }
+    div.language a:hover {
+      color: #fafafa; }
+    @media screen and (max-width: 768px) {
+      div.language a {
+        font-size: .7em; } }
+  @media screen and (max-width: 768px) {
+    div.language {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 22.316%; }
+      div.language:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    div.language {
+      width: 100%;
+      text-align: left; } }
 
 /*shorter clearfix http://nicolasgallagher.com/micro-clearfix-hack/*/
 header:before,
